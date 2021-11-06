@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay It</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Payez.png" type="image/x-icon">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <a href="/" class="nav-logo"><img src="Payez.png" alt="" width="100" height="100"></a>
+            <!-- Links -->
+            <ul class="nav-container">
+                <li class="nav-item">
+                    <a href="pay.html" class="link">Pay It</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-btn"><a href="get.html"> Sign Up </a></button>
+                </li>
+            </ul>
+            <!-- A sort of icon for respnosive -->
+            <div class="res">
+                <span class="toggleMore"></span>
+                <span class="toggleMore"></span>
+                <span class="toggleMore"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg intro">
+        <h1>Read the guidlines carefully to pay</h1>
+    </section>
+        <button class="tabnav" onclick="openPage('step1', this, '#a200df')">1</button>
+        <button class="tabnav" onclick="openPage('step2', this, '#134233')">2</button>
+        <button class="tabnav" onclick="openPage('step3', this, '#159af7')">3</button>
+        <button class="tabnav" onclick="openPage('step4', this, '#ff404f')">4</button>
+
+        <div id="step1" class="howto">
+            <p>Sign Up and make an account</p>
+        </div>
+
+        <div id="step2" class="howto">
+            <p>Email us and will ask some details</p>
+        </div>
+
+        <div id="step3" class="howto">
+            <p>If you fail the verfication, your account will be blocked</p>
+        </div>
+
+        <div id="step4" class="howto">
+            <p>Only after verification, you'll be able to pay</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
