@@ -9,39 +9,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="Payez.png" type="image/x-icon">
     <style>
-        .container {
+        #explore {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 25px;
-      border-radius: 5%;
-      border: 1px solid black;
-      text-align: center;
-      margin: 0 10px;
-      padding: 10px;   
+            justify-content: center;
         }
 
-        .contact-items {
-            display: flex;
-            margin: 30px auto;
-            /* flex-wrap: wrap; */
-            align-items: center;
-
-        }
-
-        .cc,
-        .Ask-us,
-        .s-market {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 28%;
-            margin: 30px auto;
-            padding: 35px 15px;
-            border-radius: 15px;
+        #explore div {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5%;
+            border: 1px solid black;
             text-align: center;
-            /* min-width: 250px; */
+            margin: 0 10px;
+            padding: 10px;
+        }
 
+        #explore div:hover {
+            box-shadow: 5px 10px black;
         }
 
         .cc {
@@ -101,10 +84,14 @@
             color: #1b1bc4;
             text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
         }
-        
-        @media only screen and (max-width: 720px) {
-            .container {
-                display:inline;
+
+        .navbar {
+            position: inherit;
+        }
+
+        @media screen and (max-width: 768px) {
+            #explore {
+                display: inline;
             }
         }
     </style>
@@ -139,10 +126,9 @@
             </div>
         </nav>
     </header>
-    <main>
-    <div class="container intro bg">
-        <h1>Contact Us</h1>
-        <div class="contact-items">
+    <main class="bg intro">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <section id="explore">
             <div class="cc">
                 <h3>Customer Care</h3>
                 <p>Our Support team is spread all over the world to give you fast response</p>
@@ -160,9 +146,8 @@
                 <button id="s" onclick="alert('mail at ashutosh19801@gmail.com')">Contact Us</button>
 
             </div>
-        </div>
-    </div>
-</main>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 
